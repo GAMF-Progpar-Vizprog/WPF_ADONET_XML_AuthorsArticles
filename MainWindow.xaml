@@ -1,0 +1,38 @@
+﻿<Window x:Class="WPFXMLAuthorsArticles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFXMLAuthorsArticles"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<DockPanel>
+		<Menu DockPanel.Dock="Top">
+			<MenuItem Header="File">
+				<MenuItem Header="Load" x:Name="miLoad" Click="miLoad_Click" ></MenuItem>
+				<MenuItem Header="Save" x:Name="miSave" Click="miSave_Click" ></MenuItem>
+				<MenuItem Header="Exit" x:Name="miExit" Click="miExit_Click" ></MenuItem>
+			</MenuItem>
+			<MenuItem Header="Browse">
+				<MenuItem Header="Authors" x:Name="miAuthors" Click="miAuthors_Click" ></MenuItem>
+				<MenuItem Header="Articles" x:Name="miArticles" Click="miArticles_Click" ></MenuItem>
+				<MenuItem Header="Combined" x:Name="miCombined" Click="miCombined_Click" ></MenuItem>
+			</MenuItem>
+		</Menu>
+		<DataGrid DockPanel.Dock="Top" x:Name="dgAuthors" DataContext="{Binding}" Visibility="Collapsed" AutoGenerateColumns="False">
+			<DataGrid.Columns>
+				<DataGridTextColumn Header="AuthorID" Binding="{Binding AuthorID}"/>
+				<DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+			</DataGrid.Columns>
+		</DataGrid>
+		<DataGrid DockPanel.Dock="Top" x:Name="dgArticles" DataContext="{Binding}" Visibility="Collapsed" AutoGenerateColumns="False">
+			<DataGrid.Columns>
+				<DataGridTextColumn Header="ArticleID" Binding="{Binding ArticleID}"/>
+				<DataGridTextColumn Header="Title" Binding="{Binding Title}"/>
+				<DataGridHyperlinkColumn Header="Link" Binding="{Binding URL}"/>
+			</DataGrid.Columns>
+		</DataGrid>
+		<local:ucCombined x:Name="ucCombined" Visibility="Collapsed"></local:ucCombined>
+	</DockPanel>
+
+</Window>
