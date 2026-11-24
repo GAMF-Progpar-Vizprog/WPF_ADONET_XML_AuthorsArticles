@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace WPFXMLAuthorsArticles {
+namespace WPF_ADONET_XML_AuthorsArticles {
     
     
     /// <summary>

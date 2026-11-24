@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using DataRowView = System.Data.DataRowView;
 
-namespace WPFXMLAuthorsArticles
+namespace WPF_ADONET_XML_AuthorsArticles
 {
 	/// <summary>
 	/// Interaction logic for ucCombined.xaml

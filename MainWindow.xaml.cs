@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace WPFXMLAuthorsArticles
+namespace WPF_ADONET_XML_AuthorsArticles
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace WPFXMLAuthorsArticles
+namespace WPF_ADONET_XML_AuthorsArticles
 {
 	/// <summary>
 	/// Interaction logic for App.xaml

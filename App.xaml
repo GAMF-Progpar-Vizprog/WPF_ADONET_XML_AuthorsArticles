@@ -1,7 +1,7 @@
-﻿<Application x:Class="WPFXMLAuthorsArticles.App"
+﻿<Application x:Class="WPF_ADONET_XML_AuthorsArticles.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WPFXMLAuthorsArticles"
+             xmlns:local="clr-namespace:WPF_ADONET_XML_AuthorsArticles"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
